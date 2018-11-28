@@ -1,0 +1,19 @@
+{
+  "name": "js-utils",
+  "version": "1.0.0",
+  "description": "---",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dai1254473705/js-utils.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dai1254473705/js-utils/issues"
+  },
+  "homepage": "https://github.com/dai1254473705/js-utils#readme"
+}
