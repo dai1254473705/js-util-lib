@@ -1,8 +1,13 @@
 {
   "name": "js-utils",
   "version": "1.0.0",
-  "description": "---",
+  "description": "javascript 工具",
   "main": "app.js",
+   "files": [
+    "index.js",
+    "libs",
+    "scripts"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +15,10 @@
     "type": "git",
     "url": "git+https://github.com/dai1254473705/js-utils.git"
   },
-  "author": "",
+  "author": {
+    "name": "daiyunzhou",
+    "email": "1254473705@qq.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dai1254473705/js-utils/issues"
