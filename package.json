@@ -1,19 +1,20 @@
 {
-  "name": "js-utils",
+  "name": "js-util-lib",
   "version": "1.0.0",
-  "description": "javascript 工具",
-  "main": "app.js",
+  "description": "javascript 工具类",
+  "main": "index.js",
    "files": [
     "index.js",
     "libs",
-    "scripts"
+    "scripts",
+    "index.html"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dai1254473705/js-utils.git"
+    "url": "git+https://github.com/dai1254473705/js-util-lib.git"
   },
   "author": {
     "name": "daiyunzhou",
@@ -21,7 +22,7 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dai1254473705/js-utils/issues"
+    "url": "https://github.com/dai1254473705/js-util-lib/issues"
   },
-  "homepage": "https://github.com/dai1254473705/js-utils#readme"
+  "homepage": "https://github.com/dai1254473705/js-util-lib#readme"
 }

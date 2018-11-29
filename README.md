@@ -1,8 +1,8 @@
-# javascript utils 
+# js-util-lib
 ---
 
 ## Install
 
 ```sh
-npm install --save-dev babel-preset-stage-0
+npm install --save js-util-lib
 ```
