@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "javascript 工具类",
   "main": "index.js",
-   "files": [
+  "files": [
     "index.js",
     "libs",
     "scripts",
@@ -24,5 +24,11 @@
   "bugs": {
     "url": "https://github.com/dai1254473705/js-util-lib/issues"
   },
-  "homepage": "https://github.com/dai1254473705/js-util-lib#readme"
+  "homepage": "https://github.com/dai1254473705/js-util-lib#readme",
+  "devDependencies": {
+    "webpack": "^4.26.1"
+  },
+  "dependencies": {
+    "eslint": "^5.9.0"
+  }
 }
