@@ -8,6 +8,9 @@
 # Updated by daiyunzhou 2018-11-29 14:57
 ===================================================================*/
 
-export default {
-	
-}
+import Query from './src/query';
+
+// global
+window.jsUtilLib = {
+    query: new Query()
+};

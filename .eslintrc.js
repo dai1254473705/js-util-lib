@@ -3,15 +3,15 @@ module.exports = {
         "browser": true,
         "commonjs": true,
         "node": true,
-        "mocha": true,
-        "jquery":true
+        "es6": true 
     },
     "extends": "eslint:recommended",
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
         },
-        "ecmaVersion": 5
+        "ecmaVersion": 6,
+        "sourceType":"module"
     },
     "rules": {
         "no-console":0,

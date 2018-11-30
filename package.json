@@ -1,6 +1,6 @@
 {
   "name": "js-util-lib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "javascript 工具类",
   "main": "index.js",
   "files": [
@@ -10,7 +10,8 @@
     "index.html"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --hot --watch"
   },
   "repository": {
     "type": "git",
@@ -26,7 +27,9 @@
   },
   "homepage": "https://github.com/dai1254473705/js-util-lib#readme",
   "devDependencies": {
-    "webpack": "^4.26.1"
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
   },
   "dependencies": {
     "eslint": "^5.9.0"

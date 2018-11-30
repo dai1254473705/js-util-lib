@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <a href="http://localhost:9000/demo/query/index.html">http://localhost:9000/demo/query/index.html</a>
+    <h1>Query</h1>
+    <p>1.getParams</p>
+</body>
+<script src="../../js.utils.lib.js"></script>
+<script>
+    var query = jsUtilLib.query;
+    var uri = 'abc.com?a=1&bb=22&ccc=333';
+    var allQuery = query.getAllParams({cover:false});
+    console.log(allQuery);
+</script>
+</html>
