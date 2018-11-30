@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="http://localhost:9000/demo/query/index.html">http://localhost:9000/demo/query/index.html</a>
+    <p><a href="http://localhost:9000/demo/query/index.html">query html</a></p>
     <h1>Query</h1>
     <p>1.getParams</p>
 </body>
@@ -15,7 +15,7 @@
 <script>
     var query = jsUtilLib.query;
     var uri = 'abc.com?a=1&bb=22&ccc=333';
-    var allQuery = query.getAllParams({cover:false});
+    var allQuery = query.getAllParams(null,true);
     console.log(allQuery);
 </script>
 </html>

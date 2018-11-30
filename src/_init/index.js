@@ -8,7 +8,6 @@
 
 export default class jsUtilLib {
   constructor (props) {
-    console.log('-------',props);
     this.showLogger = true;
   }
   logger (msg){
