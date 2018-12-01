@@ -9,8 +9,12 @@
 ===================================================================*/
 
 import Query from './src/query';
+import Validata from './src/validata';
+import DataMask from './src/dataMask';
 
 // global
 window.jsUtilLib = {
-    query: new Query()
+    query: new Query(),
+    validata: new Validata(),
+    dataMask: new DataMask(),
 };

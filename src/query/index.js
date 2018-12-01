@@ -1,12 +1,14 @@
 /**
  * query 
+ * url query参数处理
  * daiyunzhou 2018-11-29 20:12 
  * last modify author : daiyunzhou
- * last modify time : 2018-11-29 20：13
+ * last modify time : 2018-12-01 12：13
  */
-import jsUtilLib from '../_init';
+'use strict';
+import JsUtilLib from '../_init';
 
-export default class Query extends jsUtilLib {
+export default class Query extends JsUtilLib {
     constructor () {
         super();
         this.href = window.location.href;
@@ -69,7 +71,7 @@ export default class Query extends jsUtilLib {
     getQueryString (name,url = this.href) {
         try {
             if (!name) throw new Error('name is not defined!');
-            let reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'ig');
+            let reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
             let query = url.replace(/.*\?/i, '');
             let param = query.match(reg);
             if ( param ) {

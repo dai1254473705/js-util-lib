@@ -7,17 +7,22 @@
     <title>Document</title>
 </head>
 <body>
-    <p><a href="http://localhost:9000/demo/query/index.html">query html</a></p>
+    <p><a href="http://localhost:9000/demo/query/index.html?a=1&bb=22&ccc=333">query html</a></p>
     <h1>Query</h1>
     <p>1.getParams</p>
 </body>
 <script src="../../js.utils.lib.js"></script>
 <script>
-    var query = jsUtilLib.query;
-    var uri = 'abc.com?a=1&bb=22&ccc=333';
-    var allQuery = query.getAllParams(null,true);
-    console.log(allQuery);
-    var param = query.getQueryString('sdf');
-    console.log(param);
+    console.log('-----------------------------query------------------------------------------');
+    console.log('当前页url参数',jsUtilLib.query.getAllParams()); // 当前页url参数
+    console.log('当前页指定的url参数',jsUtilLib.query.getQueryString('a')); // 当前页url参数
+    console.log('-----------------------------datamask------------------------------------------');
+    console.log('手机号',jsUtilLib.dataMask.mobile('13019219923')); // 手机号
+    console.log('座机',jsUtilLib.dataMask.telephone('010-51662227')); // 座机
+    
+    console.log('身份证号',jsUtilLib.dataMask.idCardNum('130184188202121212'));//身份证号
+    console.log('银行卡号',jsUtilLib.dataMask.bankCardNum('6217002260009086123'));// 银行卡号
+    
+    
 </script>
 </html>

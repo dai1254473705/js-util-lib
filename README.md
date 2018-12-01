@@ -41,9 +41,9 @@ or
 +       {aaa:[1,4],bbb=3}  
 	
 ```sh
-	jsUtilLib.query.getAllParams(null,true);
-	// 或者
-	jsUtilLib.query.getAllParams();
+jsUtilLib.query.getAllParams(null,true);
+// 或者
+jsUtilLib.query.getAllParams();
 	
 ```
 	
@@ -54,15 +54,15 @@ or
 + name : required 
 
 ```sh
-	/**
-     * Getting parameters from URL or custom string;
-     * @param { String } `name` The key corresponding to the value you want;
-     * @param { String } `url` 
-     * @example :
-     *  url = 'http://js/utils/lib?aaa=1&bbb=3&aaa=4'
-     *  this.getQueryString('aaa'); // 4
-     *  this.getQueryString('aaa','your custom url'); 
-     */
+/**
+ * Getting parameters from URL or custom string;
+ * @param { String } `name` The key corresponding to the value you want;
+ * @param { String } `url` 
+ * @example :
+ *  url = 'http://js/utils/lib?aaa=1&bbb=3&aaa=4'
+ *  this.getQueryString('aaa'); // 4
+ *  this.getQueryString('aaa','your custom url'); 
+ */
 jsUtilLib.query.getQueryString('sdf');
 ```
 ---
