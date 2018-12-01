@@ -18,7 +18,8 @@ export default class JsUtilLib {
       idCardNum: [/^[0-9]{15}$/,/^[0-9]{17}[0-9xX]$/], //15 || 18 位身份证
       bankCardNum: /^([1-9]{1})(\d{15}|\d{18})$/,// 银行卡号
       url: /^http:\/\/[a-zA-Z0-9]+\.[a-zA-Z0-9]+[\/=\?%\-&_~`@[\]\':+!]*([^<>\"\"])*$/,// url
-      enString: /^[a-z,A-Z]+$/,// 英文大小写
+      enString: /^[a-z,A-Z]+$/,// 全部英文大小写
+      zhString: /^[\u4e00-\u9fa5]+$/,// 全部中文
     };
     this.logger = this.logger.bind(this);
   }

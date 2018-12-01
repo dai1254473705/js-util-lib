@@ -16,12 +16,26 @@
     console.log('-----------------------------query------------------------------------------');
     console.log('当前页url参数',jsUtilLib.query.getAllParams()); // 当前页url参数
     console.log('当前页指定的url参数',jsUtilLib.query.getQueryString('a')); // 当前页url参数
+    console.log('-----------------------------Validata------------------------------------------');
+    console.log('是否为空',jsUtilLib.validata.isNull('')); // 是否为空 true
+    console.log('是否是字符串',jsUtilLib.validata.isString('')); // 是否是字符串 true
+    console.log('判断是否是手机号',jsUtilLib.validata.isMobile('')); // 判断是否是手机号 false
+    console.log('判断是否是座机号',jsUtilLib.validata.isTelephone('')); // 判断是否是座机号 false
+    console.log('判断是否是身份证号',jsUtilLib.validata.isIdCardNum('')); // 判断是否是身份证号 false
+    console.log('判断是否是银行卡号',jsUtilLib.validata.isBankCardNum('')); // 判断是否是银行卡号 false
+    console.log('判断是否是邮箱',jsUtilLib.validata.isEmail('')); // 判断是否是邮箱 false
+    console.log('判断是不是都是字母',jsUtilLib.validata.isEnString('')); // 判断是不是都是字母 false
+    console.log('判断是不是都是中文',jsUtilLib.validata.isZhString('')); // 判断是不是都是中文 false
+    console.log('判断是不是url地址',jsUtilLib.validata.isUrl('')); // 判断是不是url地址 false
     console.log('-----------------------------datamask------------------------------------------');
-    console.log('手机号',jsUtilLib.dataMask.mobile('13019219923')); // 手机号
-    console.log('座机',jsUtilLib.dataMask.telephone('010-51662227')); // 座机
+    console.log('手机号',jsUtilLib.dataMask.mobile('13019219923')); // 手机号 130****9923
+    console.log('座机',jsUtilLib.dataMask.telephone('010-51662227')); // 座机 ****2227
+    console.log('身份证号',jsUtilLib.dataMask.idCardNum('130184188202121212'));//身份证号 ************1212
+    console.log('银行卡号',jsUtilLib.dataMask.bankCardNum('6217002260009086123'));// 银行卡号 621700**********6123
+    console.log('中文名',jsUtilLib.dataMask.chineseName('李啊地方'));// 中文名 李*方
+    console.log('邮箱',jsUtilLib.dataMask.email('abcd@qq.com'));// 邮箱 a**@qq.com
     
-    console.log('身份证号',jsUtilLib.dataMask.idCardNum('130184188202121212'));//身份证号
-    console.log('银行卡号',jsUtilLib.dataMask.bankCardNum('6217002260009086123'));// 银行卡号
+    
     
     
 </script>

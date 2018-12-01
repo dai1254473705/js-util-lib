@@ -8,6 +8,19 @@
 'use strict';
 import JsUtilLib from '../_init';
 
+/**
+ * @class Validata 
+ * @method { Function } isNull 是否为空||undefined || null
+ * @method { Function } isString 是否是字符串
+ * @method { Function } isMobile 判断是否是手机号
+ * @method { Function } isTelephone 判断是否是座机号
+ * @method { Function } isIdCardNum 判断是否是身份证号
+ * @method { Function } isBankCardNum 判断是否是银行卡号
+ * @method { Function } isEmail 判断是否是邮箱
+ * @method { Function } isEnString 判断是不是都是字母
+ * @method { Function } isZhString 判断是不是都是中文
+ * @method { Function } isUrl 判断是不是url地址
+ */
 export default class Validata extends JsUtilLib {
     constructor (){
         super();
@@ -16,7 +29,7 @@ export default class Validata extends JsUtilLib {
     // 是否为空
     isNull (data){
         try {
-            if (data === undefined || data === null || data === '' || isNaN(data)) {
+            if (data === undefined || data === null || data === '') {
                 return true;
             }
             return false;
@@ -125,12 +138,44 @@ export default class Validata extends JsUtilLib {
     }
 
     // 判断是不是都是字母
-    isEnString (str){   
+    isEnString (str){
         try {
             if ( this.isNull(str) ) {
                 return false;
             } 
             if ( this.regExp.enString.test(str) ) {
+                return true;
+            }
+            return false;
+        } catch (error) {
+            this.logger(error);
+            return false;
+        } 
+    }
+
+    // 判断是不是都是中文
+    isZhString (str){   
+        try {
+            if ( this.isNull(str) ) {
+                return false;
+            } 
+            if ( this.regExp.zhString.test(str) ) {
+                return true;
+            }
+            return false;
+        } catch (error) {
+            this.logger(error);
+            return false;
+        } 
+    }
+
+    // 判断是不是网址
+    isUrl (str){   
+        try {
+            if ( this.isNull(str) ) {
+                return false;
+            } 
+            if ( this.regExp.url.test(str) ) {
                 return true;
             }
             return false;
