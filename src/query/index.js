@@ -22,19 +22,18 @@ export default class Query extends jsUtilLib {
      *  if `cover = true` : 
      *      {aaa:4,bbb=3}
      *  if `cover = false` :
-     *      {aaa:[1,4],bbb=3}  
+     *      {aaa:[1,4],bbb=3}
      */
     getAllParams ( url= this.href ,cover= true){
         try {
-            // if (!url) throw new Error('url is not defined');
             if (!url){
                 url = this.href;
             }
             let query = url.replace(/.*\?/i, '');
-            //([^=&]*)匹配不是=或者&的
+            //([^=&]*) match not `=` or `&`;
             let reg = /([^=&]*)(=)([^=&]*)/g;
             let obj = {};
-            let res =null;
+            let res = null;
             while ( res = reg.exec(query) ) {
                 if (cover) {
                     obj[res[1]] = res[3];
@@ -59,6 +58,28 @@ export default class Query extends jsUtilLib {
     }
 
     /**
-     * 
+     * Getting parameters from URL or custom string;
+     * @param { String } `name` [required]  The key corresponding to the value you want;
+     * @param { String } `url` 
+     * @example :
+     *  url = 'http://js/utils/lib?aaa=1&bbb=3&aaa=4'
+     *  this.getQueryString('aaa'); // 4
+     *  this.getQueryString('aaa','your custom url'); 
      */
+    getQueryString (name,url = this.href) {
+        try {
+            if (!name) throw new Error('name is not defined!');
+            let reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'ig');
+            let query = url.replace(/.*\?/i, '');
+            let param = query.match(reg);
+            if ( param ) {
+                return param[2];
+            } else {
+                return '';
+            }
+        } catch (error) {
+            this.logger(error);
+            return '';
+        }
+    } 
 }
