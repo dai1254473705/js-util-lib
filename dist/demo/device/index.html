@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>设备信息</title>
+</head>
+<body>
+    <p><a href="http://localhost:9000/demo/device/index.html">设备信息</a></p>
+</body>
+<script src="../../js.utils.lib.js"></script>
+<script>
+    console.log('-----------------------------device------------------------------------------');
+    // 获取图片base64
+    console.log('系统信息',jsUtilLib.device.os());
+    console.log('pc还是移动端',jsUtilLib.device.type());
+</script>
+</html>

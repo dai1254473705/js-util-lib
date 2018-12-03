@@ -13,6 +13,7 @@ import Validata from './src/validata';
 import DataMask from './src/dataMask';
 import ImageLib from './src/image';
 import GUID from './src/guid';
+import Device from './src/device';
 
 
 // global
@@ -22,4 +23,5 @@ window.jsUtilLib = {
     dataMask: new DataMask(),
     image: new ImageLib(),
     guid: new GUID(),
+    device: new Device(),
 };

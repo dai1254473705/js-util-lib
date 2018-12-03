@@ -62,6 +62,13 @@ or
 
 + <a href="#jsUtilLib.guid.get">jsUtilLib.guid.get&nbsp;--&nbsp;生成GUID</a>
 
+### 5. [jsUtilLib.device](https://github.com/dai1254473705/js-util-lib/tree/dev/src/device/index.js)
+
+> + 获取设备信息
+
++ <a href="#jsUtilLib.device.os">jsUtilLib.device.os&nbsp;--&nbsp;获取当前系统信息</a>
++ <a href="#jsUtilLib.device.typeos">jsUtilLib.device.type&nbsp;--&nbsp;获取当前设备类型（移动端和pc端）</a>
+
 ## 使用方法：
 
 ## 1.jsUtilLib.query
@@ -188,4 +195,25 @@ jsUtilLib.image.size('../../img/demo.jpg',function(error,data){
 
 ```sh
 console.log('guid:',jsUtilLib.guid.get()); // guid: a91a7228-da1b-4026-af47-232c0dcd9a2a
+```
+
+### 5. jsUtilLib.device
+
+---
+### <h3 id="jsUtilLib.device.os">jsUtilLib.device.os<h3>
+
+> + 获取当前系统信息  
+> + 返回值：ios|android|windowphone|windows|macos|''
+
+```sh
+console.log('系统信息',jsUtilLib.device.os()); //系统信息 windows
+```
+
+### <h3 id="jsUtilLib.device.type">jsUtilLib.device.type<h3>
+
+> + 获取当前设备类型（移动端和pc端）
+> + 返回值：mobile|pc|''
+
+```sh
+console.log('pc还是移动端',jsUtilLib.device.type());//pc还是移动端 pc
 ```
