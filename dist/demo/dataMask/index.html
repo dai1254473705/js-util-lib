@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p><a href="http://localhost:9000/demo/dataMask/index.html">dataMask 脱敏操作</a></p>
+</body>
+<script src="../../js.utils.lib.js"></script>
+<script>
+    console.log('-----------------------------datamask------------------------------------------');
+    console.log('手机号',jsUtilLib.dataMask.mobile('13019219923')); // 手机号 130****9923
+    console.log('座机',jsUtilLib.dataMask.telephone('010-51662227')); // 座机 ****2227
+    console.log('身份证号',jsUtilLib.dataMask.idCardNum('130184188202121212'));//身份证号 ************1212
+    console.log('银行卡号',jsUtilLib.dataMask.bankCardNum('6217002260009086123'));// 银行卡号 621700**********6123
+    console.log('中文名',jsUtilLib.dataMask.chineseName('李啊地方'));// 中文名 李*方
+    console.log('邮箱',jsUtilLib.dataMask.email('abcd@qq.com'));// 邮箱 a**@qq.com
+    
+    
+    
+    
+</script>
+</html>

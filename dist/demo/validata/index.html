@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>验证类</title>
+</head>
+<body>
+    <p><a href="http://localhost:9000/demo/validata/index.html">验证类</a></p>
+</body>
+<script src="../../js.utils.lib.js"></script>
+<script>
+    console.log('-----------------------------Validata------------------------------------------');
+    console.log('是否为空',jsUtilLib.validata.isNull('')); // 是否为空 true
+    console.log('是否是字符串',jsUtilLib.validata.isString('')); // 是否是字符串 true
+    console.log('判断是否是手机号',jsUtilLib.validata.isMobile('')); // 判断是否是手机号 false
+    console.log('判断是否是座机号',jsUtilLib.validata.isTelephone('')); // 判断是否是座机号 false
+    console.log('判断是否是身份证号',jsUtilLib.validata.isIdCardNum('')); // 判断是否是身份证号 false
+    console.log('判断是否是银行卡号',jsUtilLib.validata.isBankCardNum('')); // 判断是否是银行卡号 false
+    console.log('判断是否是邮箱',jsUtilLib.validata.isEmail('')); // 判断是否是邮箱 false
+    console.log('判断是不是都是字母',jsUtilLib.validata.isEnString('')); // 判断是不是都是字母 false
+    console.log('判断是不是都是中文',jsUtilLib.validata.isZhString('')); // 判断是不是都是中文 false
+    console.log('判断是不是url地址',jsUtilLib.validata.isUrl('')); // 判断是不是url地址 false
+</script>
+</html>

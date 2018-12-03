@@ -11,10 +11,15 @@
 import Query from './src/query';
 import Validata from './src/validata';
 import DataMask from './src/dataMask';
+import ImageLib from './src/image';
+import GUID from './src/guid';
+
 
 // global
 window.jsUtilLib = {
     query: new Query(),
     validata: new Validata(),
     dataMask: new DataMask(),
+    image: new ImageLib(),
+    guid: new GUID(),
 };

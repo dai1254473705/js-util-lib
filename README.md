@@ -49,6 +49,19 @@ or
 + <a href="#jsUtilLib.dataMask">jsUtilLib.dataMask.chineseName&nbsp;--&nbsp;中文姓名脱敏</a>
 + <a href="#jsUtilLib.dataMask">jsUtilLib.dataMask.email&nbsp;--&nbsp;邮箱脱敏</a>
 
+### 4. [jsUtilLib.image](https://github.com/dai1254473705/js-util-lib/tree/dev/src/image/index.js)
+
+> + 图片处理
+
++ <a href="#jsUtilLib.image.base64">jsUtilLib.image.base64&nbsp;--&nbsp;图片转base64</a>
++ <a href="#jsUtilLib.image.size">jsUtilLib.image.size&nbsp;--&nbsp;获取图片宽高</a>
+
+### 5. [jsUtilLib.guid](https://github.com/dai1254473705/js-util-lib/tree/dev/src/guid/index.js)
+
+> + 生成GUID || UUID (随机生成，不能保证绝对没有重复)
+
++ <a href="#jsUtilLib.guid.get">jsUtilLib.guid.get&nbsp;--&nbsp;生成GUID</a>
+
 ## 使用方法：
 
 ## 1.jsUtilLib.query
@@ -136,4 +149,43 @@ jsUtilLib.query.getQueryString('sdf');
     console.log('银行卡号',jsUtilLib.dataMask.bankCardNum('6217002260009086123'));// 银行卡号 621700**********6123
     console.log('中文名',jsUtilLib.dataMask.chineseName('李啊地方'));// 中文名 李*方
     console.log('邮箱',jsUtilLib.dataMask.email('abcd@qq.com'));// 邮箱 a**@qq.com
+```
+
+## 4.jsUtilLib.image
+---
+### <h3 id="jsUtilLib.image.base64">jsUtilLib.image.base64<h3>
+
+> + `jsUtilLib.image.base64(url:String<required>,callback:Function<required>,quality:Float||Number);`
+
+```sh
+// 获取图片base64
+jsUtilLib.image.base64('../../img/demo.jpg',function(error,data){
+    if (error) {
+        console.log(error);
+    } else {
+        console.log(data);
+    }
+},1);
+```
+### <h3 id="jsUtilLib.image.size">jsUtilLib.image.size<h3>
+
+> + `jsUtilLib.image.size(url:String<required>,callback:Function<required>);`
+
+```sh
+// 获取图片宽高
+jsUtilLib.image.size('../../img/demo.jpg',function(error,data){
+    if (error) {
+        console.log(error);
+    } else {
+        console.log(data);
+    }
+},1);
+```
+## 4.jsUtilLib.guid
+
+---
+### <h3 id="jsUtilLib.guid.get">jsUtilLib.guid.get<h3>
+
+```sh
+console.log('guid:',jsUtilLib.guid.get()); // guid: a91a7228-da1b-4026-af47-232c0dcd9a2a
 ```

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>图片方法</title>
+</head>
+<body>
+    <p><a href="http://localhost:9000/demo/image/index.html">图片方法</a></p>
+</body>
+<script src="../../js.utils.lib.js"></script>
+<script>
+    console.log('-----------------------------image------------------------------------------');
+
+    // 获取图片base64
+    jsUtilLib.image.base64('../../img/demo.jpg',function(error,data){
+        if (error) {
+            console.log(error);
+        } else {
+            console.log(data);
+        }
+    },1);
+
+    // 获取图片宽高
+    jsUtilLib.image.size('https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2514237777,2985570887&fm=58&bpow=605&bpoh=759',function(error,data){
+        if (error) {
+            console.log(error);
+        } else {
+            console.log(data);
+        }
+    },1);
+</script>
+</html>
