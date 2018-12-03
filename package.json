@@ -1,16 +1,9 @@
 {
   "name": "js-util-lib",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "javascript 工具类",
   "main": "index.js",
-  "files": [
-    "index.js",
-    "libs",
-    "scripts",
-    "index.html"
-  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --hot --watch"
   },
   "repository": {
